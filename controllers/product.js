@@ -28,7 +28,7 @@ const getAllProductsTesting = async (req, res) => {
             .skip(skip) // Apply pagination with skip
             .limit(limit); // Apply limit to control page size
 
-        res.status(200).json({ message: "success", data: myData });
+        res.status(200).json({ message: "successsss", data: myData });
     } catch (error) {
         res.status(500).json({ message: "error", error: error.message });
     }
