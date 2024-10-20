@@ -19,7 +19,7 @@ const getAllProductsTesting = async (req, res) => {
     }
 
     let page = Number(req.query.page) || 1;
-    let limit = Number(req.query.limit) || 3; // Default limit to 10 items per page
+    let limit = Number(req.query.limit) || 1; // Default limit to 10 items per page
     let skip = (page - 1) * limit;
 
     try {
